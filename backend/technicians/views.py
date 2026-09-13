@@ -1,5 +1,6 @@
 from django.db.models import Avg
 from rest_framework import generics
+from rest_framework.permissions import IsAuthenticated
 
 from .filters import TechnicianFilter
 from .models import TechnicianProfile

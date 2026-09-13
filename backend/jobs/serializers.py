@@ -22,10 +22,10 @@ class JobSerializer(serializers.ModelSerializer):
         read_only_fields = [
             "id",
             "customer",
-            "status",
             "created_at",
             "updated_at",
         ]
+
     def validate_status(self, value):
         if not self.instance:
             return value
